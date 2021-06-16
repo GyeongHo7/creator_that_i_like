@@ -1,0 +1,26 @@
+#eeText {
+    text-align : center;
+    margin-top : 100px;
+    margin-bottom : 100px;
+    color : #272727;
+}
+
+#logoText {
+    color : #bd0000;
+}
+
+img {
+    display : block;
+    margin : 0px auto;
+}
+
+img:hover {
+    animation : rotate_img 0.5s linear infinite;
+    transform-origin : 50% 50%;
+}
+
+@keyframes rotate_img {
+    100% { transform: rotate( 360deg ); }
+}
+
+

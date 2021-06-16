@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator, that I like</title>
+    <link rel="shortcut icon" href="icon/favicon.png">
+    <link rel="icon" href="icon/favicon.png">
+    <link rel="stylesheet" href="style/baseStyle.css">
+    <link rel="stylesheet" href="style/indexStyle.css">
+    <script src="scripts/EE.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://masonry.desandro.com/masonry.pkgd.min.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+
+            var frames = [
+
+            'Creator_info/Creator_Animal/Profile/Arirang.png',
+            'Creator_info/Creator_Animal/Profile/Ari.png',
+            'Creator_info/Creator_Animal/Profile/CatDaddy.png',
+
+            'Creator_info/Creator_Development/Profile/Jo_coding.png',
+            'Creator_info/Creator_Development/Profile/Nomad_coder.png',
+            'Creator_info/Creator_Development/Profile/Russell.png',
+
+            'Creator_info/Creator_Engineering/Profile/Geekble.png',
+            'Creator_info/Creator_Engineering/Profile/MachoMan.png',
+            'Creator_info/Creator_Engineering/Profile/LADB.png',
+
+            'Creator_info/Creator_Game/Profile/YT_Apple.jpg',
+            'Creator_info/Creator_Game/Profile/SeungSangShing.png',
+            'Creator_info/Creator_Game/Profile/StarWhale.png',
+
+            'Creator_info/Creator_Music/Profile/Detempo_world.png',
+            'Creator_info/Creator_Music/Profile/Pr!d3.png',
+            'Creator_info/Creator_Music/Profile/Dingo_Freestyle.png',
+
+            'Creator_info/Creator_Review/Profile/Itsub.png',
+            'Creator_info/Creator_Review/Profile/Playsin.png',
+            'Creator_info/Creator_Review/Profile/IMJI.png',
+
+            'Creator_info/Creator_Science/Profile/Primer.png',
+            'Creator_info/Creator_Science/Profile/Vsauce.png',
+            'Creator_info/Creator_Science/Profile/Yongdal.png'
+            ];
+
+            // 문서 객체를 생성합니다.
+            for (var i = 0; i < 21; i++) {
+                $('<img>').addClass('box').css({
+                    width: 150,
+                    height: 150 
+                })
+                .attr("src", frames[i])
+                .appendTo('div.boxes');
+            }
+
+            // Masonry 플러그인을 적용합니다.
+            $('div.boxes').masonry({
+                columnWidth: 110
+            });
+        });
+    </script>
+    
+</head>
+<body>
+
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a onclick="easterEgg()">
+                    <h1>Creator</h1>
+                    <h1>, that I like</h1>
+                </a>
+            </div>
+            <nav>
+                <ul id="topMenu">
+                    <li><a href="Creator_info/Creator_Animal/Creator_Animal.html">Animal</a></li>
+                    <li><a href="creator_info/Creator_Development/Creator_Development.html">Development </a></li>
+                    <li><a href="Creator_info/Creator_Engineering/Creator_Engineering.html">Engineering</a></li>
+                    <li><a href="Creator_info/Creator_Game/Creator_Game.html">Game</a></li>
+                    <li><a href="Creator_info/Creator_Music/Creator_Music.html">Music</a></li>
+                    <li><a href="Creator_info/Creator_Review/Creator_Review.html">Review</a></li>
+                    <li><a href="Creator_info/Creator_Science/Creator_Science.html">Science</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="boxes">
+
+
+
+        </div>
+
+        <h1 id="notice">창을 줄여보세요! 이미지들이 재배열 됩니다!</h1>
+    </div>
+</body>
+</html>

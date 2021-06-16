@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+#logo > a > h1:hover {
+    cursor : pointer;
+}
+
+#image {
+    clear : both;
+    width : 300px;
+    height : 300px;
+    position : relative;
+    border-radius : 150px;
+}
+
+#slide {
+    margin-top : 200px;
+    text-align : center;
+}
+
+#slide > h1 {
+    margin-top : 20px;
+    text-align : center;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight : lighter;
+
+    color : #474747;
+}
+
+#slides {
+    position : relative;
+}
+
+#slides > img {
+    width : 300px;
+    height : 300px;
+}
+
+.boxes {
+    position : absolute;
+    left : 50%;
+    transform: translateX(-46%);
+    margin-top : 80px;
+    
+    width : 85%;
+    height : 20%;
+}
+
+.box { 
+    margin-top : 30px;
+    margin-bottom : 30px;
+    position : absolute;
+    left : 50%;
+    transform: translateX(10%);
+    border-radius : 87.5px;
+}
+
+#notice {
+    position : fixed;
+    color : #6e6e6e;
+    text-align : center;
+    font-size : 10px;
+    bottom : 10px;
+    left : 45%;
+}
